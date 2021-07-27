@@ -21,6 +21,8 @@ const Index = () => (
           <p className="text-xl lg:text-2xl mt-6 font-light">
           Fundada en 2017, Germinar es una empresa uruguaya dedicada al cultivo y mejoramiento genético de variedades de cáñamo y cannabis. Incubada en Khem, en el Polo Tecnológico de Pando cuenta con el apoyo de la Agencia Nacional de Investigación e Innovación de Uruguay, en su programa Emprendedores Innovadores Biotecnológicos, durante el período 2017-2020
           </p>
+          <br/>
+          <p>Comercializamos Moca, una variedad de cáñamo desarrollada en Uruguay por Germinar. Presenta niveles de cannabidiol (CDB) de 13,4-15,9% y tetrahidrocannabinol (THC) de 0,6%</p>
           <p className="mt-8 md:mt-12">
             <a className="bg-primary hover:bg-primary-darker  rounded py-4 px-12        text-white" size="lg">Escribínos</a>
           </p>

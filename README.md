@@ -1,4 +1,7 @@
-# Gatsby Lander
+# GerminarUy.com
+
+
+## Based on
 
 This is an experimental starter built using [gatsby-theme-codebushi](https://github.com/codebushi/gatsby-theme-codebushi), a theme which uses [Tailwind CSS](https://tailwindcss.com/).
 
@@ -6,7 +9,7 @@ Check out https://codebushi.com/gatsby-starters-and-themes/ for more Gatsby star
 
 ## Preview
 
-https://gatsby-lander.surge.sh/
+https://germinaruy.com/
 
 ## Installation
 

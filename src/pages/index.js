@@ -24,7 +24,7 @@ const Index = () => (
           <br/>
           <p>Comercializamos Moca, una variedad de cáñamo desarrollada en Uruguay por Germinar. Presenta niveles de cannabidiol (CDB) de 13,4-15,9% y tetrahidrocannabinol (THC) de 0,6%</p>
           <p className="mt-8 md:mt-12">
-            <a className="bg-primary hover:bg-primary-darker  rounded py-4 px-12        text-white" size="lg">Escribínos</a>
+            <a href="mailto:germinaruy@gmail.com" className="bg-primary hover:bg-primary-darker  rounded py-4 px-12        text-white" size="lg">Escribínos</a>
           </p>
           <p className="mt-4 text-gray-600">Javier Frávega Angeloro +598  99 209 659</p>
           <p className=" text-gray-600">Matias Rodales +598 98 828 566</p>

@@ -9,110 +9,87 @@ import StatsBox from '../components/StatsBox';
 import customerData from '../data/customer-data';
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
+import IrccaImage from '../svg/IrccaImage';
+import MgapImage from '../svg/MgapImage';
+import GerminarImage from '../svg/GerminarImage';
+import AniiImage from '../svg/AniiImage';
+import KhemImage from '../svg/KhemImage';
+import Hero from '../components/Hero';
 
 const Index = () => (
   <Layout>
-    <section className="pt-20 md:pt-40">
-      <div className="container mx-auto px-8 lg:flex align-middle">
-        <div className="text-center lg:text-left lg:w-1/2">
-          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none lowercase text-transparent">
-            germinar
-                    </h1>
-          <p className="text-xl lg:text-2xl mt-6 font-light">
-          Fundada en 2017, Germinar es una empresa uruguaya dedicada al cultivo y mejoramiento genético de variedades de cáñamo y cannabis. Incubada en Khem, en el Polo Tecnológico de Pando cuenta con el apoyo de la Agencia Nacional de Investigación e Innovación de Uruguay, en su programa Emprendedores Innovadores Biotecnológicos, durante el período 2017-2020
-          </p>
-          <br/>
-          <p>Comercializamos Moca, una variedad de cáñamo desarrollada en Uruguay por Germinar. Presenta niveles de cannabidiol (CDB) de 13,4-15,9% y tetrahidrocannabinol (THC) de 0,6%</p>
-          <p className="mt-8 md:mt-12">
-            <a href="mailto:germinaruy@gmail.com" className="bg-primary hover:bg-primary-darker  rounded py-4 px-12        text-white" size="lg">Escribínos</a>
-          </p>
-          <p className="mt-4 text-gray-600">Javier Frávega Angeloro +598  99 209 659</p>
-          <p className=" text-gray-600">Matias Rodales +598 98 828 566</p>
-
-        </div>
-        <div className="lg:w-1/2">
-          <HeroImage />
-        </div>
-      </div>
+    
+    <section id="hero" className="">
+      <Hero/>
+      
     </section>
-    {/* <section id="features" className="py-20 lg:pb-40 lg:pt-48">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">Main Features</h2>
-        <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
-          <div className="flex-1 px-3">
-            <Card className="mb-8">
-              <p className="font-semibold text-xl">Service One</p>
-              <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
-              </p>
-            </Card>
-          </div>
-          <div className="flex-1 px-3">
-            <Card className="mb-8">
-              <p className="font-semibold text-xl">Service Two</p>
-              <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
-              </p>
-            </Card>
-          </div>
-          <div className="flex-1 px-3">
-            <Card className="mb-8">
-              <p className="font-semibold text-xl">Service Three</p>
-              <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
-              </p>
-            </Card>
-          </div>
-        </div>
-      </div>
-    </section>
+    
     <SplitSection
-      id="services"
+      id="nosotros"
       primarySlot={
         <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-3xl font-semibold leading-tight">Market Analysis</h3>
+          <h3 className="text-3xl font-semibold leading-tight text-primary">Quiénes somos</h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            Our team of enthusiastic marketers will analyse and evaluate how your company stacks
-            against the closest competitors
+          Fundada en 2017, Germinar es una empresa uruguaya dedicada al cultivo y mejoramiento genético de variedades de cáñamo y cannabis. Incubada en Khem, en el Polo Tecnológico de Pando cuenta con el apoyo de la Agencia Nacional de Investigación e Innovación de Uruguay, en su programa Emprendedores Innovadores Biotecnológicos, durante el período 2017-2020. 
+
           </p>
         </div>
       }
-      secondarySlot={<SvgCharts />}
+      secondarySlot={<GerminarImage />}
     />
     <SplitSection
       reverseOrder
       primarySlot={
         <div className="lg:pl-32 xl:pl-48">
-          <h3 className="text-3xl font-semibold leading-tight">
-            Design And Plan Your Business Growth Steps
+          <h3 className="text-3xl font-semibold leading-tight text-primary">
+            Investigación y Desarrollo
           </h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            Once the market analysis process is completed our staff will search for opportunities
-            that are in reach
+          En 2018, el Instituto de Regulación y Control de Cannabis otorgó a la empresa una licencia para la investigación y desarrollo [I+D] de una variedad nacional de cáñamo. En 2019, el Instituto Nacional de Semillas registró MOCA, la variedad de cáñamo con alto contenido en CBD desarrollada por nuestro equipo.
           </p>
         </div>
       }
-      secondarySlot={<SvgCharts />}
+      secondarySlot={<IrccaImage />}
     />
     <SplitSection
       primarySlot={
         <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-3xl font-semibold leading-tight">
-            Search For Performance Optimization
+          <h3 className="text-3xl font-semibold leading-tight text-primary">
+            Cultivo y producción
           </h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            With all the information in place you will be presented with an action plan that your
-            company needs to follow
+          Germinar ejecuta una licencia de la Dirección General de Servicios Agrícolas del Ministerio de Ganadería Agricultura y Pesca para el cultivo de cáñamo y la producción de semillas feminizadas. Nos especializamos en proveer genética de cáñamo a cultivadores en Uruguay y la región, para usos medicinales e industriales. 
+
           </p>
         </div>
       }
-      secondarySlot={<SvgCharts />}
+      secondarySlot={<MgapImage />}
     />
-    <section id="stats" className="py-20 lg:pt-32">
+    <section id="apoyos" className="py-20 lg:pb-40 lg:pt-48">
       <div className="container mx-auto text-center">
+        <h2 className="text-3xl lg:text-5xl font-semibold">Confían en Nosotros</h2>
+        <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
+          <div className="flex-1 flex items-center px-3 m-12">
+          <AniiImage />
+             
+          </div>
+          <div className="flex-1 flex items-center px-3 m-12">
+          <KhemImage/>
+           
+          </div>
+          <div className="flex-1 px-3">
+            
+          </div>
+          <div className="flex-1 px-3">
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="moca" className="py-20 lg:py-40">
+      <div className="container mx-auto text-center">
+        <h2 className="text-3xl lg:text-5xl font-semibold">MOCA</h2>
+
         <LabelText className="text-gray-600">Our customers get results</LabelText>
         <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
           <div className="w-full sm:w-1/3">
@@ -125,13 +102,23 @@ const Index = () => (
             <StatsBox primaryText="+100%" secondaryText="Stats Information" />
           </div>
         </div>
-      </div>
-    </section>
-    <section id="testimonials" className="py-20 lg:py-40">
-      <div className="container mx-auto">
         <LabelText className="mb-8 text-gray-600 text-center">What customers are saying</LabelText>
         <div className="flex flex-col md:flex-row md:-mx-3">
-          {customerData.map(customer => (
+          {customerData.map((customer) => (
+            <div key={customer.customerName} className="flex-1 px-3">
+              <CustomerCard customer={customer} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+    <section id="historia" className="py-20 lg:py-40">
+      <div className="container mx-auto text-center">
+        <h2 className="text-3xl lg:text-5xl font-semibold">Nuestra Historia</h2>
+        
+        <LabelText className="mb-8 text-gray-600 text-center">What customers are saying</LabelText>
+        <div className="flex flex-col md:flex-row md:-mx-3">
+          {customerData.map((customer) => (
             <div key={customer.customerName} className="flex-1 px-3">
               <CustomerCard customer={customer} />
             </div>
@@ -147,7 +134,7 @@ const Index = () => (
       <p className="mt-8">
         <Button size="xl">Get Started Now</Button>
       </p>
-    </section> */}
+    </section>
   </Layout>
 );
 

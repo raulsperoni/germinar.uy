@@ -1,12 +1,17 @@
 import React from 'react';
 import Footer from './Footer';
 import Header from './Header';
+import Hero from '../Hero';
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Header />
-      <main className="text-gray-900">{children}</main>
+      <section className="h-screen">
+        <Header />
+
+        <Hero />
+      </section>
+      <main className="text-gray-900 text-justify">{children}</main>
       <Footer />
     </>
   );

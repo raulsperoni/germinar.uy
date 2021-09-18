@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 
 const HeroImage = () => (
-  <StaticImage src="../images/GERMINAR.png" />
+  <StaticImage src="../images/planta1.jpg" />
 );
 
 export default HeroImage;

@@ -1,44 +1,36 @@
+import { graphql, useStaticQuery } from 'gatsby';
+import BackgroundSlider from 'gatsby-image-background-slider';
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
-import TrajeImage from '../svg/TrajeImage';
 
 const Hero = ({ children, className = '', size }) => {
   return (
-    <div style={{ display: 'grid' }}>
-      <StaticImage
-        style={{
-          gridArea: '1/1',
-          // You can set a maximum height for the image, if you wish.
-          // maxHeight: 600,
-        }}
-        layout="fullWidth"
-        aspectRatio={3 / 1}
-        alt=""
-        src={'../images/planta1.jpg'}
-        formats={['auto', 'webp', 'avif']}
-      />
-      <div
-        style={{
-          // By using the same grid area for both, they are stacked on top of each other
-          gridArea: '1/1',
-          position: 'relative',
-          // This centers the other elements inside the hero component
-          placeItems: 'center',
-          display: 'grid',
-        }}
-      >
-        <div className="flex w-1/2 text-center text-white">
-          <div className="p-10 flex items-center text-center"> 
-          <p className={'font-medium text-xl text-white'}>
-            Germinar es una empresa uruguaya dedicada al cultivo y mejoramiento genético de
-            variedades de cáñamo y cannabis
-          </p>
-          </div>
-          <div className="w-2/3">
-            <TrajeImage />
-          </div>
-        </div>
-      </div>
+    <div id="hero">
+      <BackgroundSlider
+        query={useStaticQuery(graphql`
+          query {
+            backgrounds: allFile(filter: { sourceInstanceName: { eq: "backgrounds" } }) {
+              nodes {
+                relativePath
+                childImageSharp {
+                  fluid(maxWidth: 4000, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+          }
+        `)}
+        initDelay={2} // delay before the first transition (if left at 0, the first image will be skipped initially)
+        transition={4} // transition duration between images
+        duration={12} // how long an image is shown
+        // specify images to include (and their order) according to `relativePath`
+        images={['flor.jpg', 'moca.jpg', 'plantin.jpg']}
+
+        // pass down standard element props
+        //style={{
+        // transform: "rotate(-2deg) scale(.9)",
+        // }}
+      ></BackgroundSlider>
     </div>
   );
 };

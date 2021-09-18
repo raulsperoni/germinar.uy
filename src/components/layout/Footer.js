@@ -1,38 +1,41 @@
 import React from 'react';
+import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => (
-  <footer className="container mx-auto py-16 px-3 mt-48 mb-8 text-gray-800">
-    {/* <div className="flex -mx-3">
-      <div className="flex-1 px-3">
-        <h2 className="text-lg font-semibold">About Us</h2>
-        <p className="mt-5">Ridiculus mus mauris vitae ultricies leo integer malesuada nunc.</p>
+  <footer className="mx-auto py-16 px-3 mt-48  text-white bg-primary">
+    <div className="flex justify-around justify-items-center">
+      <div className="flex-1 flex flex-row text-2xl justify-end mr-5">
+        <a
+          className="text-white mr-3"
+          href="https://www.linkedin.com/company/germinaruy"
+          target="_blank"
+        >
+          <FaLinkedin />
+        </a>
+        <a
+          className="text-white mr-3"
+          href="https://www.linkedin.com/company/germinaruy"
+          target="_blank"
+        >
+          <FaInstagram />
+        </a>
+        <a
+          className="text-white mr-3"
+          href="https://www.linkedin.com/company/germinaruy"
+          target="_blank"
+        >
+          <FaTwitter />
+        </a>
       </div>
-      <div className="flex-1 px-3">
-        <h2 className="text-lg font-semibold">Important Links</h2>
-        <ul className="mt-4 leading-loose">
-          <li>
-            <a href="https://codebushi.com">Terms &amp; Conditions</a>
-          </li>
-          <li>
-            <a href="https://codebushi.com">Privacy Policy</a>
-          </li>
-        </ul>
+      <div className="flex-1">
+        <a
+          className="py-2 px-3 bg-white hover:font-bold hover:text-primary rounded text-primary"
+          href="mailto:germinaruy@gmail.com"
+        >
+          Contacto
+        </a>
       </div>
-      <div className="flex-1 px-3">
-        <h2 className="text-lg font-semibold">Social Media</h2>
-        <ul className="mt-4 leading-loose">
-          <li>
-            <a href="https://dev.to/changoman">Dev.to</a>
-          </li>
-          <li>
-            <a href="https://twitter.com/HuntaroSan">Twitter</a>
-          </li>
-          <li>
-            <a href="https://github.com/codebushi/gatsby-starter-lander">GitHub</a>
-          </li>
-        </ul>
-      </div>
-    </div> */}
+    </div>
   </footer>
 );
 

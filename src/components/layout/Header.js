@@ -6,35 +6,29 @@ import Button from '../Button';
 import GerminarImage from '../../svg/GerminarImage';
 
 const Header = () => (
-  <header className="sticky top-0 bg-white shadow in z-50">
+  <header className="sticky top-0 bg-black shadow in z-50 text-white">
     <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
       <div className="flex items-center text-2xl">
-        <div className="w-40 mr-3">
+        <div className="w-48 mr-3">
           <GerminarImage />
         </div>
       </div>
-      <div className="flex mt-4 sm:mt-0">
-        <AnchorLink className="px-4" href="#nosotros">
-          Quiénes somos
+      <div className="flex flex-1 justify-around mt-4 sm:mt-0 font-medium">
+        <AnchorLink className="py-2 px-3 text-white" href="#nosotros">
+          Nosotros
         </AnchorLink>
-        <AnchorLink className="px-4" href="#moca">
+        <AnchorLink className="py-2 px-3 text-white" href="#moca">
           MOCA
         </AnchorLink>
-        <AnchorLink className="px-4" href="#historia">
-          Nuestra Historia
+        <AnchorLink className="py-2 px-3 text-white" href="#historia">
+          Historia
         </AnchorLink>
-        <AnchorLink className="px-4" href="#contacto">
+        <AnchorLink className="py-2 px-3 bg-white hover:font-bold hover:text-primary rounded text-primary" href="#contacto">
           Contacto
         </AnchorLink>
       </div>
       <div className="hidden md:block">
-        <a
-          href="mailto:germinaruy@gmail.com"
-          className="bg-primary hover:font-bold hover:text-white rounded py-4 px-12 text-white"
-          size="lg"
-        >
-          Escribínos
-        </a>
+       
       </div>
     </div>
   </header>
